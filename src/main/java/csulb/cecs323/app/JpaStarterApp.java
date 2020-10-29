@@ -64,12 +64,16 @@ public class JpaStarterApp {
       LOGGER.fine("Creating Student object");
 
       Student graceHopper = new Student();
-      graceHopper.setFirstName("Bill");
-      graceHopper.setLastName("Gates");
-      graceHopper.setGpa(3.4);
+      graceHopper.setFirstName("Grace");
+      graceHopper.setLastName("Hopper");
+      graceHopper.setGpa(4);
+
+      Student jobs = new Student();
+      jobs.setFirstName("Steve");
+      jobs.setLastName("Wozniak");
+      jobs.setGpa(3.9);
 
       LOGGER.fine("Persisting Student object to DB");
-      this.entityManager.persist(graceHopper);
+      this.entityManager.persist(jobs);
    }
-
 }
